@@ -1,0 +1,38 @@
+@import 'src/theme/variables/colors';
+@import '../../theme/variables/dimensions';
+@import '../../theme/variables/typography';
+
+.main_timeslot_dialog{
+    .css-169iwlq-MuiCalendarPicker-root{
+        width: 100%;
+        border: 1px solid;
+        border-color: $gray-light1;
+    }
+    .css-exn63t-MuiButtonBase-root-MuiTab-root{
+        width: 160px;
+    }
+    .timeslot_heading{
+        &.active{
+            color: $orange ;
+        }
+    }
+    .timeslot_tabs{
+        .timeslot_tab{
+            color: $black;
+            background: $gray-pale;
+            border-radius: $dim-half ;
+            box-shadow: none;
+            &.active{
+                color: $white;
+                background: $orange;
+            }
+        }
+    }
+    .sumbit-timeslot {
+        background-color: $gray-dark;
+
+        &:hover{
+        background-color: $gray-darker;
+        }
+    }
+}

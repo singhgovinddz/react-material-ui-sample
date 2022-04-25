@@ -1,0 +1,17 @@
+.directiondialog{
+    .MuiPaper-elevation{
+        width: 100%;
+        min-height: 250px;
+    }
+    .MuiSelect-outlined{
+        padding: 9.5px 14px !important;
+        &:focus-visible {
+            outline: none !important;
+        }
+    }
+    .MuiOutlinedInput-root{
+        &:focus-visible {
+            outline: none !important;
+        }
+    }
+}

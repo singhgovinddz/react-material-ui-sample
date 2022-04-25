@@ -1,0 +1,86 @@
+{
+  "name": "material-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@azure/msal-browser": "~2.18.0",
+    "@azure/msal-react": "~1.1.0",
+    "@emotion/react": "~11.4.1",
+    "@emotion/styled": "~11.3.0",
+    "@material-ui/core": "~5.0.0-beta.5",
+    "@material-ui/lab": "~5.0.0-alpha.44",
+    "@mui/icons-material": "~5.0.1",
+    "@mui/lab": "~5.0.0-alpha.51",
+    "@mui/material": "~5.0.2",
+    "@stripe/react-stripe-js": "~1.6.0",
+    "@stripe/stripe-js": "~1.20.3",
+    "@types/react": "~17.0.33",
+    "@types/styled-components": "~5.1.15",
+    "axios": "~0.24.0",
+    "azure-maps-control": "~2.1.8",
+    "azure-maps-rest": "~2.0.5",
+    "date-fns": "~2.25.0",
+    "i18next": "~21.2.4",
+    "moment": "~2.29.1",
+    "react": "~17.0.2",
+    "react-azure-maps": "~0.3.0",
+    "react-device-detect": "~2.1.2",
+    "react-dom": "~17.0.2",
+    "react-i18next": "~11.12.0",
+    "react-lite-youtube-embed": "~2.2.1-a",
+    "react-router-dom": "~5.3.0",
+    "react-swipeable-views": "~0.14.0",
+    "react-swipeable-views-utils": "~0.14.0",
+    "styled-components": "~5.3.3",
+    "typescript": "~4.4.4"
+  },
+  "scripts": {
+    "start": "react-scripts start --max_old_space_size=4096 build",
+    "start:dev": "env-cmd -f .env.development npm start",
+    "start:dev-dot": "dotenv -e .env.development npm start",
+    "start:stage": "env-cmd -f .env.stage npm start",
+    "start:prod": "env-cmd -f .env.prod npm start",
+    "build": "react-scripts build --max_old_space_size=4096 build",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage --all",
+    "lint": "node_modules/.bin/eslint --ext js src",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/react-router-dom": "^5.3.2",
+    "@types/react-swipeable-views": "^0.13.1",
+    "@types/react-swipeable-views-utils": "^0.13.3",
+    "babel-eslint": "^10.1.0",
+    "dotenv-cli": "^4.0.0",
+    "env-cmd": "^10.1.0",
+    "node-sass": "^7.0.1",
+    "react-scripts": "5.0.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+@import 'src/theme/variables/colors';
+@import 'theme/variables/dimensions';
+@import 'theme/variables/typography';
+
+ pre{
+   margin: 0;
+   font-family: inherit;
+   font-display: swap;
+   padding: 0 $dim-doubleplus;
+ }
+  .css-1eoe787-MuiSlider-markLabel{
+    transform: translateX(-10%);
+  }
+  .css-yafthl-MuiSlider-markLabel{
+    transform: translateX(-90%);
+  }
+  .brown_Button{
+    background: $brown-dark;
+    color: $white;
+    &:hover{
+      background: $brown-dark;
+    }
+  }
+  .main_loader{
+    height: calc(100vh - 132px);
+    //background: $gray-pale;
+    padding: $dim-xlarge;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p{
+      padding-bottom: $dim-triple;
+    }
+    .css-79nvmn-MuiCircularProgress-circle{
+      stroke-width: 1;
+    }
+    .css-1dtmduz-MuiCircularProgress-root{
+      color: $green-light;
+      width: 140px !important;
+      height: 140px !important;
+    }
+  }
+  .user_popover{
+    .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+      &:before {
+        content: '""';
+        display: 'block';
+        position: 'absolute';
+        top: 0;
+        right: 14;
+        width: 10;
+        height: 10;
+        background: $white;
+        transform: translateY(-50%) rotate(45deg);
+        z-index: 0,
+      }
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+@import '../../theme/variables/colors';
+@import '../../theme/variables/dimensions';
+@import '../../theme/variables/typography';
+@import '../../theme/variables/responsive';
+
+.addcalendar{
+    .css-1t1j96h-MuiPaper-root-MuiDialog-paper{
+        width: 100%;
+        @media only screen and(min-width: $vp-phone) and(max-width: $vp-small) {
+          width: auto;
+           }
+    }
+    .heading_top{
+        background: $gray-pale;
+        justify-content: space-between;
+        flex-direction: column;
+        @media only screen and(min-width: $vp-phone) and(max-width: $vp-small) {
+         flex-direction: column;  
+        }
+        p{
+          font-size: $font-dim-smallup;
+        }
+      }
+}

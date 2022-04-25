@@ -1,0 +1,14 @@
+@import 'src/theme/variables/colors';
+@import '../../theme/variables/dimensions';
+@import '../../theme/variables/typography';
+.search_header{
+  background: $green-pale !important;
+  color: $black !important;
+  border-bottom: 1px solid $green-light;
+  padding-top: $dim-semi-half;
+  padding-bottom: $dim-half;
+
+  ArrowBackIosIcon svg{
+    color: $green-dark;
+  }
+}
